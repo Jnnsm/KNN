@@ -1,3 +1,11 @@
+######################################################
+##                                                  ##
+##                DESENVOLVIDO POR                  ##
+##      EDUARDO JUNIOR DIAS DOS SANTOS MOREIRA      ##
+##              MATEUS ARMOND SANTOS                ##
+##                                                  ##
+######################################################
+
 li $t1, 5       #Tamanho do vetor
 sw $t1, 0($gp)
 
@@ -23,7 +31,7 @@ sw $t1, 24($gp)
 
 li $t9, 1 #variavel 1
 
-nop #programa começa a partir daqui para datapath
+nop #programa comeï¿½a a partir daqui para datapath
 lw $t1, 4($gp)
 lw $t2, 0($gp) #Tamaho do vetor
 add $t2, $t2, $t2
@@ -55,7 +63,7 @@ Loop: lw $t5, 0($t4)
   nop
   beq $t0, $zero, NaoMenor
 DefinitivaNaoMenor:
-  #move $t6, $t5 
+  #move $t6, $t5
   sw $t5,68($gp)
   lw $t6,68($gp)
 NaoMenor:
@@ -88,7 +96,7 @@ Loop2: lw $t5, 0($t4)
   nop
   nop
   beq $t0, $zero, Menor
-  
+
   slt $t0, $t5, $t1
   nop
   nop
@@ -126,28 +134,9 @@ Menor:
 sw $t6, 32($gp)
 sw $t7, 36($gp)
 
-  
 
 
-  
+
+
 ##$t7 variavel temporaria
 ##$t6 variavel definitiva
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
